@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
+        <h1 className="text-6xl md:text-8xl lg:text-8xl font-bold mb-6 tracking-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-200 to-blue-400">
             SEVEN ALEXANDER
           </span>
