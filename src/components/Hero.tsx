@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="mb-8 space-y-4">
           <div className="flex items-center justify-center gap-2 text-cyan-400 text-sm tracking-widest">
             <div className="w-12 h-px bg-cyan-400" />
-            <span>sevander 2025</span>
+            <span>sevander</span>
             <div className="w-12 h-px bg-cyan-400" />
           </div>
         </div>
