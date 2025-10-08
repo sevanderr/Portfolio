@@ -40,6 +40,16 @@ export default function Contact() {
     setStatus('loading');
     setErrorMessage('');
 
+    if (!supabase) {
+      setStatus('error');
+      setErrorMessage('Contact form is temporarily unavailable. Please email hello@yourname.com directly.');
+      setTimeout(() => {
+        setStatus('idle');
+        setErrorMessage('');
+      }, 8000);
+      return;
+    }
+
     try {
       const { error } = await supabase.from('contact_messages').insert([
         {
