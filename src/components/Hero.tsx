@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useEffect, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
-  const [text, setText] = useState("");
-  const fullText = "DESIGN ENGINEER";
+  const [text, setText] = useState('');
+  const fullText = 'DESIGN ENGINEER';
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
@@ -28,9 +28,9 @@ export default function Hero() {
   }, []);
 
   const scrollToAbout = () => {
-    const element = document.getElementById("about");
+    const element = document.getElementById('about');
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -38,41 +38,34 @@ export default function Hero() {
     <div className="relative min-h-screen flex items-center justify-center px-6">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
-        <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1s" }}
-        />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <div className="mb-8 space-y-4">
           <div className="flex items-center justify-center gap-2 text-cyan-400 text-sm tracking-widest">
             <div className="w-12 h-px bg-cyan-400" />
-            <span>sevander</span>
+            <span>PORTFOLIO 2025</span>
             <div className="w-12 h-px bg-cyan-400" />
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-8xl lg:text-8xl font-bold mb-6 tracking-tight">
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-200 to-blue-400">
-            SEVEN ALEXANDER
+            YOUR NAME
           </span>
         </h1>
 
         <div className="h-16 md:h-20 mb-8">
           <p className="text-2xl md:text-4xl font-light tracking-wider text-cyan-400">
             {text}
-            <span
-              className={`inline-block w-1 h-8 md:h-10 bg-cyan-400 ml-1 ${
-                showCursor ? "opacity-100" : "opacity-0"
-              }`}
-            />
+            <span className={`inline-block w-1 h-8 md:h-10 bg-cyan-400 ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
           </p>
         </div>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
-          Crafting pixel-perfect interfaces and building seamless user
-          experiences at the intersection of design and code
+          Crafting pixel-perfect interfaces and building seamless user experiences
+          at the intersection of design and code
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
